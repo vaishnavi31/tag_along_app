@@ -1,0 +1,17 @@
+<ng-container *ngIf="user; else loadingTemplate">
+    <div class="d-flex border p-2 rounded me-2 my-1">
+        <span class="material-symbols-outlined me-2">
+            {{user?.gender == 'M' ? 'face_6' : 'face_3'}}
+        </span>
+        <span>{{user?.name}}</span>
+    </div>
+
+</ng-container>
+
+<ng-template #loadingTemplate>
+    <div class="d-flex p-2 px-3 rounded me-2 my-1">
+        <div class="spinner-grow text-primary spinner-grow-sm" role="status">
+            <span class="sr-only"></span>
+        </div>
+    </div>
+</ng-template>

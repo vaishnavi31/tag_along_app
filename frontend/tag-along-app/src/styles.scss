@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+a {
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+h3.app-logo a {
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+p.text-pre-wrap {
+    white-space: pre-wrap;
+}

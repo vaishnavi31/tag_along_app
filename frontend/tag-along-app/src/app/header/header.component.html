@@ -1,0 +1,14 @@
+<header class="py-4 px-5 d-flex justify-content-between align-items-center">
+    <h3 class="app-logo"><a routerLink="/">Tag Along</a></h3>
+    <div class="d-flex align-items-center">
+        <ng-container *ngIf="appService.loggedInUser">
+            <span>{{appService.loggedInUser.name}}, </span>
+            <a class="display-block  ml-3 px-2" (click)="appService.logout()">Logout</a>
+        </ng-container>
+
+        <ng-container *ngIf="!appService.loggedInUser">
+            <a class="display-block  ml-3 px-2" routerLink="/login">Login</a>
+            <a class="display-block  ml-3 px-2" routerLink="/register">Register</a>
+        </ng-container>
+    </div>
+</header>
