@@ -16,7 +16,7 @@ Before following the below instructions, make sure that you have [Go](https://go
 2. Navigate to the folder `server` containing the `go.mod` file.
 3. Download the dependencies by running the below command:
     ```bash
-    go get github.com/prasenjeetpaul/tag_along_app
+    go get github.com/vaishnavi31/tag_along_app
     ```
 
     If the above command fails, try the below two commands to install the dependencies manually:
